@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="icon" href=""> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/src/styles.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+    
+    {% if title %}
+        <title>4Two3One - {{ title }}</title>
+    {% else %}
+        <title>4Two3One</title>
+    {% endif %}
+
+</head>
+<body>
+    <div class="app">
+        <div class="cover ">
+            
+
+
+
+
+
+
+
+
+
+            <!-- <div class="balls rot-anim1" style="bottom:-5rem; left:0rem; border-radius:40%;">
+                
+            </div>
+            <div class="balls rot-anim2" style="bottom:-4rem; left:10rem; border-radius:30%;">
+
+            </div>
+            <div class="balls rot-anim3" style="bottom:-4.5rem; left:18rem; border-radius:40%;">
+
+            </div>
+            <div class="balls rot-anim1" style="bottom:-5.5rem; left:27rem; border-radius:39%;">
+
+            </div>
+            <div class="balls rot-anim2" style="bottom:-4rem; left:36rem; border-radius:40%;">
+
+            </div>
+            <div class="balls rot-anim3" style="bottom:-4.5rem; left:45rem; border-radius:45%;">
+
+            </div>
+            <div class="balls rot-anim1" style="bottom:-5rem; left:52rem; border-radius:42%;">
+
+            </div>
+            <div class="balls rot-anim1" style="bottom:-5.5rem; left:60rem; border-radius:39%;">
+
+            </div>
+            <div class="balls rot-anim2" style="bottom:-4rem; left:68rem; border-radius:40%;">
+
+            </div>
+            <div class="balls rot-anim3" style="bottom:-4.5rem; left:76rem; border-radius:45%;">
+
+            </div>
+            <div class="balls rot-anim1" style="bottom:-5rem; left:85rem; border-radius:42%;">
+
+            </div> -->
+        </div>
+        <div class="top flex flex-col items-center w-full pb-4">
+            <div class="top__header w-full flex justify-center text-3xl py-8 bg-black text-white ">
+                <h1>4Two3One</h1>
+                
+            </div>
+            <div class="top__navbar w-full flex flex-row justify-around items-center py-3 shadow-md">
+                <a href="/">
+                    <p class="navbar__option text-xl py-4 px-7 rounded-xl hover:bg-gray-200">
+                        Home
+                    </p>
+                </a>
+                <a href="/query">
+                    <p class="navbar__option text-xl py-4 px-7 rounded-xl hover:bg-gray-200">
+                        Query
+                    </p>
+                </a>
+                {% if admin %}
+                <a href="/insert">
+                    <p class="navbar__option text-xl py-4 px-7 rounded-xl hover:bg-gray-200">
+                        Insert
+                    </p>
+                </a>
+                {% endif %}
+                {% if admin %}
+                <a href="/update">
+                    <p class="navbar__option text-xl py-4 px-7 rounded-xl hover:bg-gray-200">
+                        Update
+                    </p>
+                </a>
+                {% endif %}
+                
+                {% if login or admin %}
+                <a href="/logout">
+                    <p class="navbar__option text-xl py-4 px-7 rounded-xl hover:bg-gray-200">
+                        Logout
+                    </p>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="bottom h-full flex justify-center">
+            
+            <div class="">
+                <!-- TEMPLATE  -->
+                {% block content %}
+                {% endblock %}
+            </div>
+
+        </div>
+
+    </div>
+    <script src="../static/js/app.js"></script>
+</body>
+</html>

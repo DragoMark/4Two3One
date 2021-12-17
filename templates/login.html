@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="update">
+    <h1 class= "text-3xl mb-6">Login</h1>
+    <form action="/login_validate" method="post">
+        <div>
+            <input type="text" name="username" placeholder="Username" class="p-4 text-xl border-2 m-4 rounded-2xl">
+        </div>
+        <div>
+            <input type="text" name="password" placeholder="Password" class="p-4 text-xl border-2 m-4 rounded-2xl">
+        </div>
+        <button class="text-xl bg-gray-200 p-2 rounded-xl" type="submit">Submit</button>
+    </form>
+</div>
+{% endblock content %}

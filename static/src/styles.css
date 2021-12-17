@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin:0;
+    padding:0;   
+}
+
+body,.app{
+    width:100%;
+    height:100vh;
+}
+
+.top__header{
+    background-color:;
+}
+
+.top__navbar{
+    background-color:;
+}
+
+.cover{
+    position:absolute;
+    width:100vw;
+    height:90vh;
+    /* background-color:#c7450e; */
+    background-color:black;
+    /* animation: slide-up 1.5s 0.2s ease-in forwards; */
+}
+
+
+@keyframes slide-up{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-100vh);
+    }
+}
+
+
+
+
+
+
+
+
+
+/* .balls{
+    position:absolute;
+    bottom:-5rem;
+    left:0rem;
+    width:10rem;
+    height:10rem;
+    background-color:white;
+    border-radius:40%;
+}
+.rot-anim1{
+    animation:rotate-left 2s 0s ease-in-out infinite;
+}
+.rot-anim2{
+    animation:rotate-left 3s 0s ease-in-out infinite;
+}
+.rot-anim3{
+    animation:rotate-left 4s 0s ease-in-out infinite;
+}
+@keyframes rotate-left{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} */
+
+
+/* .cover{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    width:100vw;
+    height:100vh;
+    z-index:99;
+    background-color:black;
+    animation: slide-up 1s 7s ease-in forwards;
+  }
+  
+  .loadingBall{
+      position:relative;
+      width:13rem;
+      height:13rem;
+      background-color:white;
+      border-radius:50%;
+      border:0.25rem solid white;
+      outline:0;
+      overflow:hidden;
+  }
+  
+  .loadingBall:before{
+    content: url(images/K_black_resize1.png);
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loadingBall:after{
+    content:"";
+    position:absolute;
+    bottom:-50%;
+    left:-50%;
+    background-color:black;
+    height:200%;
+    width:200%;
+    border-radius:45%;
+    animation:liquidLoad 8s 0s ease-in-out forwards;
+  }
+  
+  @keyframes liquidLoad{
+    0%{
+      transform: translateY(0) rotate(0deg);
+    }
+    100%{
+      transform: translateY(-100%) rotate(500deg);
+    }
+  }
+  
+  @keyframes slide-up{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-100vh);
+    }
+  } */

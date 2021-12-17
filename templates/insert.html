@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="insert">
+    <h1 class= "text-3xl mb-6">Insert</h1>
+    <h2 class= "text-2xl mb-4">Insert Player</h2>
+    <form action="/insert_player" method="post">
+        <div>
+            <input type="text" name="player_id" placeholder="Player ID" class="p-2 text-xl border-2 m-2 rounded-2xl">
+        </div>
+        <div>
+            <input type="text" name="p_name" placeholder="Player Name" class="p-2 text-xl border-2 m-2 rounded-2xl">
+        </div>
+        <div>
+            <input type="text" name="position" placeholder="Position" class="p-2 text-xl border-2 m-2 rounded-2xl">
+        </div>
+        <div>
+            <input type="number" name="agent_id" placeholder="Agent ID" class="p-2 text-xl border-2 m-2 rounded-2xl">
+        </div>
+        <div>
+            <input type="text" name="nat_team" placeholder="National Team" class="p-2 text-xl border-2 m-2 rounded-2xl">
+        </div>
+        <div>
+            <input type="text" name="club_name" placeholder="Club Name" class="p-2 text-xl border-2 m-2 rounded-2xl">
+        </div>
+        <div>
+            <input type="number" name="salary" placeholder="Salary" class="p-2 text-xl border-2 m-2 rounded-2xl">
+        </div>
+        <div>
+            <input type="nubmer" name="term" placeholder="Term" class="p-2 text-xl border-2 m-2 rounded-2xl">
+        </div>
+        <div>
+            <input type="date" name="join_date" placeholder="Join Date" class="p-2 text-xl border-2 m-2 rounded-2xl">
+        </div>
+        <button class="text-xl bg-gray-200 p-2 rounded-xl" type="submit">Submit</button>
+    </form>
+</div>
+{% endblock content %}

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="update">
+    <h1 class= "text-3xl mb-6">Update</h1>
+    <form action="/update_user" method="post">
+        <h2 class="text-xl mb-4">Update Users</h2>
+        <div>
+            <input type="text" name="username" placeholder="Current Username" class="p-2 text-xl border-2 m-2 rounded-2xl">
+        </div>
+        <div>
+            <input type="text" name="new_username" placeholder="New Username" class="p-2 text-xl border-2 m-2 rounded-2xl">
+        </div>
+        <button class="text-xl bg-gray-200 p-2 rounded-xl" type="submit">Submit</button>
+    </form>
+</div>
+{% endblock content %}

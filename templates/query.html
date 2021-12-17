@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="query">
+    <h1 class= "text-3xl mb-6">Query</h1>
+    <div>
+        {% for query in queries %}
+        <form action="{{query.name}}" type="get" class="mb-4">
+            <h3 class="text-xl m-2 ">{{query.query}}</h3>
+            <button class="text-xl bg-gray-200 p-2 rounded-xl" type="submit">Submit</button>
+        </form>
+        {% endfor %}
+    </div>
+
+</div>
+{% endblock content %}
+

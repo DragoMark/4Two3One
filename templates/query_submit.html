@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="query_submit">
+    <h1 class= "text-3xl mb-6">Queried Table:</h1>
+    <div>
+        <!-- {% for player in players %}
+            <p>{{player.p_name}}</p>
+        {% endfor %} -->
+        <table>
+            <tr>
+                {% for header in headers %}
+                    <th class="bg-gray-200 text-xl px-12 border-black">{{header}}</th>
+                {% endfor %}
+            </tr>
+            {% for player in players %}
+            <tr>
+                <td>{{player.player_id}}</td>
+                <td>{{player.p_name}}</td>
+                <td>{{player.position}}</td>
+                <td>{{player.agent_id}}</td>
+                <td>{{player.nat_team}}</td>
+                <td>{{player.club_name}}</td>
+                <td>{{player.salary}}</td>
+                <td>{{player.term}}</td>
+                <td>{{player.join_date}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+</div>
+{% endblock content %}
